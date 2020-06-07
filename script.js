@@ -5,13 +5,13 @@ $(document).ready(function(){
     {
         //printing the json file in console section to check the fetching of the json data
         console.log(json);
-        //running the loop 3 times as the file contains data for 3 members
-        //later we can make it scalable so that it can retrieve data from more than 'n' number of members
+        //running the loop 3 times as the file contains data for 3 employees
+        //later we can make it scalable so that it can retrieve data from more than 'n' number of employees
         for(var i=1; i <=3; i++){
             
             //accessing image
             var x = document.createElement("IMG");
-            //link to access the picture for each team member
+            //link to access the picture for each employee
             x.setAttribute("src", "http://sandbox.bittsdevelopment.com/code1/employeepics/"+i+".jpg");
             //setting the dimensions for the picture
             x.setAttribute("width", "304");
@@ -19,11 +19,11 @@ $(document).ready(function(){
             x.setAttribute("alt", "Image");
             document.getElementById("picture" +i).append(x);
 
-            //accessing the firstname of the ith team member
+            //accessing the firstname of the ith employee
             var fname = json[i].employeefname;
-            //accessing the lastname of the ith team member
+            //accessing the lastname of the ith employee
             var lname = json[i].employeelname;
-            //combining the first and last name to print the complete name of the team member
+            //combining the first and last name to print the complete name of the employee
             document.getElementById("name"+i).innerHTML = fname + " " + lname;
             //accessing the bio of the employee
             var bio = json[i].employeebio;
