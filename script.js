@@ -9,7 +9,7 @@ $(document).ready(function(){
         //later we can make it scalable so that it can retrieve data from more than 'n' number of employees
         for(var i=1; i <=3; i++){
             
-            //accessing image
+            //accessing image using the createElement Dom Method for the dynamiccreation of HTML elements
             var x = document.createElement("IMG");
             //link to access the picture for each employee
             x.setAttribute("src", "http://sandbox.bittsdevelopment.com/code1/employeepics/"+i+".jpg");
@@ -39,7 +39,8 @@ $(document).ready(function(){
                 document.getElementById("but"+i).append(btn);
             }
 
-            //accessing the crown image for the employee which is featured
+            //accessing the crown image for the employee which is featured by the usage of createElement HTML DOM method for the
+            //dynamic creation of HTML element
             var featured = json[i].employeeisfeatured;
             if(featured === "1"){
                 //accessing image
