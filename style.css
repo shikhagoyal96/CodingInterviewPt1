@@ -1,0 +1,37 @@
+.box{
+    border: 0.1em solid black;
+    width: 35%;
+    margin-left: 40em;
+   
+}
+.crown{
+    float: right;
+}
+.picture{
+    margin-top: 30px;
+    margin: 30px;
+    text-align: center;
+}
+.namebio{
+    margin: 2em;
+    text-align: center;
+    font-size: 120%;
+    font-weight: bolder;
+}
+#name1,#name2,#name3{
+    font-size: 140%;
+}
+.rolename{
+    /*border: 0.06em solid black;*/
+    margin-left: 2%;
+    width: fit-content;
+    font-size: 100%;
+    text-align: center;
+}
+IMG{
+    border-radius: 50%;
+}
+BUTTON{
+    text-align: center;
+    font-size: 120%;
+}
